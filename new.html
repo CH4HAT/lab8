@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="scripts/newPost.js" defer></script>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>New Post</h1>
+        </header>
+        <main>
+            <form id="new-post">
+                <p>
+                    <label for="title">Title:</label>
+                    <input id="title" name="title" type="text" minlength="5">
+                    <span></span>
+                </p>
+                <p>
+                    <label for="body">Content:</label>
+                    <textarea id="body" name="body" rows="5" cols="10"></textarea>
+                    <span></span>
+                </p>
+                <button class="btn primary">Save</button>
+            </form>
+        </main>
+    </div>
+    <footer>
+        <p>ACIT 1620 - Fundamentals of Web Development &copy;2024 by Yves Rene Shema</p>
+    </footer>
+</body>
+</html>

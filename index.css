@@ -1,0 +1,159 @@
+/* .posts {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.posts > * {
+    order: 1;
+    margin: 0;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ddd;
+    padding: 0 1em 0.5em;
+}
+
+
+.read {
+    order: 0;
+    background: #ddd;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 60%;
+    margin: 0 auto;
+} */
+:root {
+    --bg: 205 80;
+}
+
+/* PAGE STRUCTURE --------------------------------------------------*/
+html,
+body {
+    height: 100%;
+    color: #333;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header,
+footer {
+    background: hsl(var(--bg) 40);
+}
+
+header {
+    padding: 1em;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+main > p {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+/* POST STYLES ---------------------------------------------*/
+.posts h2 {
+    background: hsl(var(--bg) 95);
+    color: hsl(var(--bg) 40);
+    padding: 0.5rem 1rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+li {
+    padding: 1em 0;
+}
+
+li:not(:last-child) {
+    margin: 0;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+li > h3 {
+    text-transform: capitalize;
+    color: hsl(var(--bg) 30);
+}
+
+/* INPUT AND FORM STYLES ......................................*/
+.btn {
+    box-sizing: border-box;
+    padding: 0.5em 1em;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn.primary {
+    background: hsl(var(--bg) 50);
+    color: white;
+}
+
+label {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+select {
+    padding: 0.5em;
+}
+
+option {
+    font-size: 1.2em;
+}
+
+form label,
+form input,
+form textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
+    
+form input,
+form textarea {
+    padding: 0.5em;
+}
+
+form button {
+    display: block;
+    border: none;
+    line-height: 1.5;
+    margin-left: auto;
+}
+
